@@ -1,5 +1,5 @@
 > **⚠️ Notice: Development in Progress**\
-> This package is currently in active development and should **not** be used in production environments. Features, APIs, and behavior may change. Use for testing and feedback purposes only.!
+> This package is currently in development and should **not** be used in production environments. Features, APIs, and behavior may change. Use for testing and feedback purposes only.!
 
 # Axiosly
 
