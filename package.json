@@ -1,0 +1,28 @@
+{
+  "name": "axiosly",
+  "version": "1.0.0",
+  "description": "AI-Powered Axios Interceptor for Simple, Secure API Monitoring and Tracking.",
+  "author": "Jeremy Ikwuje <https://x.com/jeremyikwuje>",
+  "license": "ISC",
+  "homepage": "https://github.com/jeremyikwuje/axiosly",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "test": "jest",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "axios",
+    "interceptor",
+    "api-monitoring",
+    "ai",
+    "observability"
+  ],
+  "devDependencies": {
+    "@types/node": "^24.3.1",
+    "axios": "^1.11.0",
+    "jest": "^30.1.3",
+    "typescript": "^5.9.2"
+  }
+}
