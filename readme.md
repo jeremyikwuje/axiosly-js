@@ -56,6 +56,3 @@ describe('Axiosly', () => {
   // Mock a request to test (requires mocking axios in full setup)
 });
 ```
-
-### License
-MIT
