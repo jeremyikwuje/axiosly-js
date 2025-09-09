@@ -1,3 +1,6 @@
+> **⚠️ Notice: Development in Progress**\
+> This package is currently in active development and should **not** be used in production environments. Features, APIs, and behavior may change. Use for testing and feedback purposes only.!
+
 # Axiosly
 
 AI-Powered Axios Interceptor for monitoring API requests and responses. Makes tracking endpoints simple, secure, and scalable.
