@@ -41,7 +41,7 @@ Basic Jest test to verify functionality. Run with `npm test`.
 
 ```typescript
 import axios from 'axios';
-import axiosly from '../src/index';
+import * as axiosly from '../src/index';
 
 describe('Axiosly', () => {
   let instance: any;

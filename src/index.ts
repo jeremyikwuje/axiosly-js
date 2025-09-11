@@ -54,11 +54,13 @@ export function monitor(instance: AxiosInstance, options: AxioslyOptions = {}) {
       };
 
       if (config.logLevel !== 'none') {
-        console[config.logLevel === 'verbose' ? 'log' : 'info']('Axiosly Request:', sanitizedMetrics.request);
+        console[config.logLevel === 'verbose' ? 'log' : 'info']('AxioslyRequest:', sanitizedMetrics.request);
       }
 
       // Queue for backend/AI processing
       metricsQueue.push(sanitizedMetrics);
+      console['log']('Request captured', metricsQueue);
+
       if (config.aiEnabled && config.backendUrl && config.apiKey) {
         // Non-blocking send (use setTimeout for async; in prod, use a worker)
         setTimeout(() => sendToBackend(sanitizedMetrics, config), 0);
@@ -82,8 +84,10 @@ export function monitor(instance: AxiosInstance, options: AxioslyOptions = {}) {
           timestamp: Date.now()
         };
 
+        console.log('Response captured', metricsQueue);
+
         if (config.logLevel !== 'none') {
-          console[config.logLevel === 'verbose' ? 'log' : 'info']('Axiosly Response:', lastMetrics.response);
+          console[config.logLevel === 'verbose' ? 'log' : 'info']('AxioslyResponse:', lastMetrics.response);
         }
 
         // AI Hook Example: Simple anomaly check (extend with ML)
